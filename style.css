@@ -1,0 +1,326 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    font-size: 100px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+#loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+}
+
+
+
+#nav>h3{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+/*typing*/
+
+.typewriter {
+    overflow: hidden; /* Ẩn phần văn bản vượt quá kích thước khung */
+    display: inline-block;
+    /* border-right: .15em solid orange; Đường viền bên phải */
+    /* white-space: nowrap; Ngăn chặn xuống dòng */
+    margin: 0 auto; /* Canh giữa văn bản */
+  
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+
+
+  
+  /* CSS cho hiệu ứng đánh chữ */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+/*btn*/
+.button{
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #050505;
+    transition: all 0.5s ease;
+  }
+  .button:active {
+    transform: scale(0.96);
+  }
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  .button.animate::before {
+    top: -70%;
+    background-image: radial-gradient(circle, #ea250f 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, #0fe28d 20%, transparent 30%),
+        radial-gradient(circle, #7d2ae8  20%, transparent 20%),
+        radial-gradient(circle, #130dbc 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #e9ed07 15%, transparent 20%),
+        radial-gradient(circle, #cf5315  20%, transparent 20%),
+        radial-gradient(circle, #a09040 20%, transparent 20%),
+        radial-gradient(circle, #d32121 20%, transparent 20%),
+        radial-gradient(circle, #5fdb07 20%, transparent 20%);
+        background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  .button.animate::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #ea250f 20%, transparent 20%),
+        radial-gradient(circle, #0fe28d 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+        radial-gradient(circle, #130dbc 20%, transparent 20%),
+        radial-gradient(circle, #e9ed07 20%, transparent 20%),
+        radial-gradient(circle, #cf5315 20%, transparent 20%),
+        radial-gradient(circle, #a09040 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+  }
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  /*Button*/
+
+#page>h3{
+    position: absolute;
+    top: 55%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #7c7c7c;
+    left: 5%;
+}
+
+#page>h4{
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+
+#page>#right-text{
+    position: absolute;
+    width: 480px;
+    top: 62%;
+    left: 5%;
+    text-align: start;
+}
+#page>#right-text>h3{
+    font-weight: 400;
+    color: #7c7c7c;
+}
+
+#page>#left-text{
+    position: absolute;
+    width: 480px;
+    height: 450px;
+    top: 62%;
+    right: 5%;
+    text-align: start;
+}
+
+#page>#left-text>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+
+
+/*Page 1*/
+#page1>#right-text{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#page1>#right-text>h3{
+    font-weight: 400;
+    color: #7c7c7c;
+}
+#page1>#right-text>h1{
+    line-height: 1.5;
+    font-size: 50px;
+}
+#page1>#left-text{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    text-align: end;
+}
+#page1>#left-text>h1{
+    font-size: 50px;
+    line-height: 1.5;
+}
+#page1>#left-text>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+    text-align: end;
+}
+
+/*Page 2*/
+#page2>#text1{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#page2>#text1>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page2>#text1>h1{
+    font-size: 60px;
+    line-height: 1.5;
+}
+#page2>#text2{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    right: 5%;
+    text-align: start;
+}
+#page2>#text2>p{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+
+/*Page 3*/
+#page3>#text3{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    text-align: end;
+}
+#page3>#text3>h3{
+    color: #7c7c7c;
+    font-weight: 400;
+}
+#page3>#text3>h1{
+    font-size: 70px;
+
+}
+#page3>#right-text{
+    position: absolute;
+    width: 480px;
+    bottom: 52%;
+    left: 5%;
+    text-align: start;
+}
+#page3>#right-text>h3{
+    font-weight: 400;
+    color: #7c7c7c;
+}
