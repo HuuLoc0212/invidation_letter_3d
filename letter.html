@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="letter.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="index.html">
+    <title>Invitation Letter</title>
+</head>
+<body>
+    
+  
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <form id="myForm">
+            <h2 >Hello! 👋👋👋</h2>
+            <br>
+            <label for="name"> Nhập tên vào đây nha :</label> <br> <br> 
+            <input class="input-text" type="text" id="name" name="name" placeholder="Nhập tên của bạn" >
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <br>
+            <p id="name-error" style="color: red; font-size: 14px; border-radius: 25px;" ></p>
+            <br>
+            <button class="button" id="submit" onclick="submit" >Gửi</button>
+        </form>
+    </div>
+</div>
+
+
+  <div class="card">
+      <div class="imgBox">
+        <img src="asset/letter.png" >
+    
+        <video id="myVideo" controls autoplay></video>
+       
+      </div>
+      <div class="details">
+        <div class="content">
+       
+          <p>
+           Trân trọng kính mời:
+            <h2 id="user" >Nguyen loc</h2> <br>
+          
+            Địa điểm: Nhà Hát Hòa Bình
+           <br>  
+            Thời gian: 7AM - ∞<br>
+            Dặn dò: Đừng tặng gấu bông nghe trời :(()) <br><br>
+            Trân trọng,<br>
+            Hữu Lộc
+            
+          </p>
+        
+        </div>
+      </div>
+    </div>
+
+ 
+ 
+
+  <!-- Confetti  JS-->
+  <script>
+
+      // start
+
+      const start = () => {
+          setTimeout(function() {
+              confetti.start()
+          }, 1000); 
+      };
+
+      //  Stop
+
+      const stop = () => {
+          setTimeout(function() {
+              confetti.stop()
+          }, 500000000); 
+      };
+
+      start();
+      stop();
+  </script>
+  <script src="confetti.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+  <script src="js/suggestions.js"></script>
+</body>
+</html>
