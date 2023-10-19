@@ -10,6 +10,9 @@ const searchmyForm = document.querySelector("#myForm");
 const inputBox = searchmyForm.querySelector("input");
 const suggBox = searchmyForm.querySelector(".autocom-box");
 
+const apiGoogleDrive = 'https://www.googleapis.com/drive/v2/files';
+const videoEle = document.getElementById("videoElement");
+
 const suggestions = [
   "Nguyễn Đức Thắng",
   "Nguyễn Thị Diễm Quỳnh",
@@ -103,6 +106,53 @@ function showSuggestions(list) {
   }
   suggBox.innerHTML = listData;
 }
+
+
+
+
+// function call api
+async function fetchAPI(url) {
+  const data = await fetch(url).then((res) => res.json());
+  return data;
+}
+
+// get url apis google
+function getGoogleApiFolder(key, id) {
+  return `${apiGoogleDrive}?q='${id}'+in+parents&key=${key}`;
+}
+
+function getGoogleApiFile(key, id) {
+  return `${apiGoogleDrive}/${id}?&key=${key}`;
+}
+
+// get url apis google
+function getGoogleApiFolder(key, id) {
+  return `${apiGoogleDrive}?q='${id}'+in+parents&key=${key}`;
+}
+
+function getGoogleApiFile(key, id) {
+  return `${apiGoogleDrive}/${id}?&key=${key}`;
+}
+
+async function handleVideoStream(idVide) {
+  await fetchAPI(getGoogleApiFile(keyGoogleApis[0].key, idVide))
+      .then((data) => {
+          if (!data.error) return data.downloadUrl;
+          return Promise.reject();
+      })
+      .then((url) => {
+        console.log(url);
+          videoEle.src = url;
+      })
+      .catch(async () => {
+          // request the api with another key
+          await fetch(getGoogleApiFile(keyGoogleApis[1].key, idVide))
+              .then((data) => data.downloadUrl)
+              .then((url) => (videoEle.src = url));
+      });
+}
+
+
 
 // Change video
 function handleVideoResult(name) {
