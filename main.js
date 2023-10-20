@@ -144,40 +144,40 @@ handleVideoStream(idVideo, keyGoogleApis)
 // Change video
 function handleVideoResult(name) {
     // Default Video src
-    var defaultVideoSrc = 'asset\\thang.mp4';
+    var defaultVideoSrc ='https://www.googleapis.com/drive/v2/files/1ClQ6-nt201U6U70odvdPsx4SNrpSxU4L?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl'
 
     switch (name) {
         case 'Nguyễn Đức Thắng':
             myVideoShow.src = defaultVideoSrc;
             break;
         case 'Lạc Tiến Huy':
-            myVideoShow.src = 'https://www.googleapis.com/drive/v2/files/1SXg-pYf586E0YFFEJI1Zse4f8OcXxi7E?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
+            myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1SXg-pYf586E0YFFEJI1Zse4f8OcXxi7E?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Nguyễn Thị Diễm Quỳnh':
             myVideoShow.src = 'asset\\Thanh.mp4';
             break;
         case 'Phạm Ngọc Trân':
-            myVideoShow.src = 'asset\\Tran.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1iKsXkOaFZZZcImSzRrbjBJUTS56SaESl?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Trần Thiện Thanh':
-            myVideoShow.src = ' https://www.googleapis.com/drive/v2/files/1m_Puq7HQEXctXsBVWlS-vyoS-yP1M1Mo?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
+            myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1m_Puq7HQEXctXsBVWlS-vyoS-yP1M1Mo?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Bùi Trương Mạnh Thông':
-            myVideoShow.src = 'asset\\Thong.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1bTx_M1mhlCvhoGPuDNTQG1MzEwj9fFrS?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Võ Anh Kiệt':
-            myVideoShow.src = 'asset\\Kiet.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1G9DFy3OJWdPvn40W3Nf3rLvSD_x2mJqm?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Lê Duy Linh':
-            myVideoShow.src = 'asset\\Linh.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1atVKYH9O2K2wUJkcNdGr2KSrXYVJliEA?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
         case 'Lê Thị Kiều Hoa':
-            myVideoShow.src = 'https://www.googleapis.com/drive/v2/files/1teKonJEghDcgppQrMHMW7RG7QYbjLKT?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1MIYPfbvjY7xvCEFM4zAWzefoCqGu0JYO?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Lê Thị Phương Thảo':
-            myVideoShow.src = 'asset\\Thao.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1U5TI4p0x6PQ-TAy-7K6vI4TKHSPv0cNZ?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Văn Bảo Nguyên':
-            myVideoShow.src = 'asset\\Nguyen.mp4';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/168O4_xfZReQdMDyDGMPPWgQKyYRN9xsD?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         default:
             myVideoShow.src = defaultVideoSrc;
