@@ -11,7 +11,7 @@ const inputBox = searchmyForm.querySelector("input");
 const suggBox = searchmyForm.querySelector(".autocom-box");
 
 const apiGoogleDrive = 'https://www.googleapis.com/drive/v2/files';
-const videoEle = document.getElementById("videoElement");
+
 
 const suggestions = [
   "Nguyễn Đức Thắng",
@@ -134,22 +134,20 @@ function getGoogleApiFile(key, id) {
   return `${apiGoogleDrive}/${id}?&key=${key}`;
 }
 
-async function handleVideoStream(idVide) {
-  await fetchAPI(getGoogleApiFile(keyGoogleApis[0].key, idVide))
-      .then((data) => {
-          if (!data.error) return data.downloadUrl;
-          return Promise.reject();
-      })
-      .then((url) => {
-        console.log(url);
-          videoEle.src = url;
-      })
-      .catch(async () => {
-          // request the api with another key
-          await fetch(getGoogleApiFile(keyGoogleApis[1].key, idVide))
-              .then((data) => data.downloadUrl)
-              .then((url) => (videoEle.src = url));
-      });
+async function handleVideoStream(idVide, keyGoogleApis) {
+  try {
+    const data = await fetchAPI(getGoogleApiFile(keyGoogleApis[0].key, idVide));
+    let url = data.downloadUrl;
+
+    if (data.error) {
+      url = await fetchAPI(getGoogleApiFile(keyGoogleApis[1].key, idVide)).then((data) => data.downloadUrl);
+    }
+
+    console.log(url);
+    myVideoShow.src = url;
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 
