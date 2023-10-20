@@ -11,7 +11,7 @@ const inputBox = searchmyForm.querySelector("input");
 const suggBox = searchmyForm.querySelector(".autocom-box");
 
 const apiGoogleDrive = 'https://www.googleapis.com/drive/v2/files';
-
+const keyGoogleApis = "AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc";
 
 const suggestions = [
   "Nguyễn Đức Thắng",
