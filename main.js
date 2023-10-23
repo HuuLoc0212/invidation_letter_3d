@@ -154,7 +154,7 @@ function handleVideoResult(name) {
             myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1SXg-pYf586E0YFFEJI1Zse4f8OcXxi7E?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Nguyễn Thị Diễm Quỳnh':
-            myVideoShow.src = 'asset\\Thanh.mp4';
+            myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1xkdHZMnkRPiaV88jFlLbhFd6pXVS3DVq?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl;'
             break;
         case 'Phạm Ngọc Trân':
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1iKsXkOaFZZZcImSzRrbjBJUTS56SaESl?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
