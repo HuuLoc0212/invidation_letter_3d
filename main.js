@@ -23,7 +23,7 @@ const suggestions = [
     'Văn Bảo Nguyên',
     'Phạm Ngọc Trân',
     'Lê Thị Kiều Hoa',
-    'Lê Thị Phương Thảo',
+    'Phương Thảo',
     'Trần Thiện Thanh',
     'Bùi Trương Mạnh Thông',
     'Lạc Tiến Huy',
@@ -154,7 +154,7 @@ function handleVideoResult(name) {
             myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1SXg-pYf586E0YFFEJI1Zse4f8OcXxi7E?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Nguyễn Thị Diễm Quỳnh':
-            myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1xkdHZMnkRPiaV88jFlLbhFd6pXVS3DVq?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl;'
+            myVideoShow.src = 'asset\\Thanh.mp4';
             break;
         case 'Phạm Ngọc Trân':
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1iKsXkOaFZZZcImSzRrbjBJUTS56SaESl?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
@@ -173,7 +173,7 @@ function handleVideoResult(name) {
         case 'Lê Thị Kiều Hoa':
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1MIYPfbvjY7xvCEFM4zAWzefoCqGu0JYO?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
-        case 'Lê Thị Phương Thảo':
+        case 'Phương Thảo':
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1U5TI4p0x6PQ-TAy-7K6vI4TKHSPv0cNZ?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Văn Bảo Nguyên':
