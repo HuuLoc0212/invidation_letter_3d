@@ -169,7 +169,7 @@ function handleVideoResult(name) {
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1G9DFy3OJWdPvn40W3Nf3rLvSD_x2mJqm?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
         case 'Lê Duy Linh':
-          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1atVKYH9O2K2wUJkcNdGr2KSrXYVJliEA?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
+          myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1teKonJEghDcgppQrMHMW7RG7QYbjLKT?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
         case 'Lê Thị Kiều Hoa':
           myVideoShow.src ='https://www.googleapis.com/drive/v2/files/1MIYPfbvjY7xvCEFM4zAWzefoCqGu0JYO?key=AIzaSyDVxObz89sy2gbAERYP37Cw8iZhmFHfXSc&alt=media&source=downloadUrl';
             break;
